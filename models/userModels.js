@@ -19,5 +19,5 @@ async function insert(user) {
 
 // Remove user
 function remove(id) {
-    return db('users').where({id})
+    return db('users').where({id}).del()
 }
